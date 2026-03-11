@@ -40,4 +40,5 @@ cd /opt/sonar/bin/linux-x86-64
 ./sonar.sh status 
 ```
 
-sqp_badfa5fe74a7edf9e05da027632c5da2caa57ac2
+sqp_3ea721be647ce5845122fff97dcd288bccdbf856
+
