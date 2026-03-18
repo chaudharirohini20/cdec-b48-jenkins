@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage('PULL'){
+            steps{
+                git branch: 'cdec-b48', url: 'https://github.com/chaudharirohini20/cbz-infra'
+            }
+        }
+        stage ('Test'){
+            steps{
+                'sh '''terraform init
+                terraform plan''''
+            }
+        }
+        stage ('Approve'){
+            steps{
+                sh 'terraform aaply --auto-approve'
+                
+            }
+        }
+        
+        }
+    }
