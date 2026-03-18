@@ -8,8 +8,8 @@ pipeline {
         }
         stage ('Test'){
             steps{
-                'sh '''terraform init
-                terraform plan''''
+                sh '''terraform init
+                terraform plan'''
             
             }
         }
